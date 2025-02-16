@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Sidenav Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Outer box */
+        .container {
+            border: 2px solid black;
+            width: 500px;
+            height: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Sidebar inside the container */
+        .sidebar {
+            position: absolute;
+            left: 0;
+            top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Space between buttons */
+        }
+
+        /* Sidebar buttons with one-sided curved corners */
+        .sidebar a {
+            display: block;
+            width: 40px;
+            height: 50px;
+            transition: width 0.3s;
+        }
+
+        /* Colors with specific border-radius for one-sided curvature */
+        .green { 
+            background-color: green; 
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .blue { 
+            background-color: blue; 
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .red { 
+            background-color: red; 
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .gray { 
+            background-color: gray; 
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        /* Content */
+        .content {
+            margin-left: 80px;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar inside the container -->
+        <div class="sidebar">
+            <a href="#" class="green"></a>
+            <a href="#" class="blue"></a>
+            <a href="#" class="red"></a>
+            <a href="#" class="gray"></a>
+        </div>
+
+        <!-- Main content -->
+        <div class="content">
+            <h1><b>Hoverable Sidenav Buttons</b></h1>
+            <p>Hover over the buttons in the left side navigation to open them.</p>
+        </div>
+    </div>
+
+</body>
+</html>
